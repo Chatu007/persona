@@ -1,0 +1,817 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PERSONA - Discover Yourself. Understand Your Personality.">
+    <title>PERSONA | Personality Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= LOADER ================= -->
+    <div id="loader">
+        <div class="loader-circle">🧠</div>
+        <h2>PERSONA</h2>
+        <p>Preparing your personality journey...</p>
+    </div>
+
+
+    <!-- ================= NAVIGATION ================= -->
+    <header class="navbar">
+
+        <a href="#home" class="logo">
+            <span>🧠</span>
+            PERSONA
+        </a>
+
+        <nav id="navMenu">
+            <a href="#home" class="nav-link active">HOME</a>
+            <a href="#personalities" class="nav-link">PERSONALITIES</a>
+            <a href="#quiz" class="nav-link">QUIZ</a>
+            <a href="#result" class="nav-link">RESULT</a>
+            <a href="#compare" class="nav-link">COMPARE</a>
+            <a href="#facts" class="nav-link">FACTS</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button id="themeToggle" class="icon-btn" title="Toggle theme">
+                🌙
+            </button>
+
+            <button id="menuToggle" class="hamburger" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- =====================================================
+             HOME
+        ====================================================== -->
+        <section id="home" class="hero section">
+
+            <div class="animated-background">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+                <div class="grid-background"></div>
+
+                <div class="particle p1"></div>
+                <div class="particle p2"></div>
+                <div class="particle p3"></div>
+                <div class="particle p4"></div>
+                <div class="particle p5"></div>
+                <div class="particle p6"></div>
+                <div class="particle p7"></div>
+                <div class="particle p8"></div>
+            </div>
+
+            <div class="hero-content reveal">
+
+                <div class="brain-orbit">
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+                    <div class="brain-icon">🧠</div>
+                    <span class="floating-symbol symbol-1">✦</span>
+                    <span class="floating-symbol symbol-2">◈</span>
+                    <span class="floating-symbol symbol-3">✧</span>
+                </div>
+
+                <p class="eyebrow">YOUR PERSONALITY JOURNEY</p>
+
+                <h1>
+                    DISCOVER
+                    <span>PERSONA</span>
+                </h1>
+
+                <p class="hero-tagline">
+                    Discover Yourself. Understand Your Personality.
+                </p>
+
+                <p class="hero-description">
+                    Explore your strengths, preferences and unique traits
+                    through an interactive personality experience.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#quiz" class="btn primary-btn ripple">
+                        START QUIZ
+                        <span>→</span>
+                    </a>
+
+                    <a href="#personalities" class="btn secondary-btn ripple">
+                        EXPLORE PERSONALITIES
+                    </a>
+
+                </div>
+
+                <div class="hero-note">
+                    ✦ Fun • Interactive • For Self-Reflection
+                </div>
+
+            </div>
+
+            <div class="scroll-down">
+                <span>SCROLL TO EXPLORE</span>
+                <div>↓</div>
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             PERSONALITIES
+        ====================================================== -->
+        <section id="personalities" class="section">
+
+            <div class="section-heading reveal">
+                <p class="section-label">UNDERSTAND YOURSELF</p>
+                <h2>Personality <span>Types</span></h2>
+                <p>
+                    Explore six personality styles and discover what makes
+                    each one unique.
+                </p>
+            </div>
+
+            <div class="personality-grid">
+
+                <article class="personality-card reveal">
+                    <div class="personality-icon">🦁</div>
+                    <span class="card-number">01</span>
+                    <h3>THE LEADER</h3>
+                    <p>
+                        Confident, decisive and ambitious people who naturally
+                        take initiative.
+                    </p>
+
+                    <div class="traits">
+                        <span>Confidence</span>
+                        <span>Ambition</span>
+                        <span>Leadership</span>
+                    </div>
+
+                    <button
+                        class="learn-btn"
+                        data-personality="leader">
+                        LEARN MORE →
+                    </button>
+                </article>
+
+
+                <article class="personality-card reveal">
+                    <div class="personality-icon">🧭</div>
+                    <span class="card-number">02</span>
+                    <h3>THE EXPLORER</h3>
+                    <p>
+                        Curious, adventurous and open-minded people who love
+                        discovering new experiences.
+                    </p>
+
+                    <div class="traits">
+                        <span>Curiosity</span>
+                        <span>Adventure</span>
+                        <span>Freedom</span>
+                    </div>
+
+                    <button
+                        class="learn-btn"
+                        data-personality="explorer">
+                        LEARN MORE →
+                    </button>
+                </article>
+
+
+                <article class="personality-card reveal">
+                    <div class="personality-icon">💡</div>
+                    <span class="card-number">03</span>
+                    <h3>THE THINKER</h3>
+                    <p>
+                        Logical, analytical and thoughtful people who enjoy
+                        solving complex problems.
+                    </p>
+
+                    <div class="traits">
+                        <span>Logic</span>
+                        <span>Analysis</span>
+                        <span>Focus</span>
+                    </div>
+
+                    <button
+                        class="learn-btn"
+                        data-personality="thinker">
+                        LEARN MORE →
+                    </button>
+                </article>
+
+
+                <article class="personality-card reveal">
+                    <div class="personality-icon">❤️</div>
+                    <span class="card-number">04</span>
+                    <h3>THE CAREGIVER</h3>
+                    <p>
+                        Kind, supportive and empathetic people who care deeply
+                        about others.
+                    </p>
+
+                    <div class="traits">
+                        <span>Empathy</span>
+                        <span>Kindness</span>
+                        <span>Support</span>
+                    </div>
+
+                    <button
+                        class="learn-btn"
+                        data-personality="caregiver">
+                        LEARN MORE →
+                    </button>
+                </article>
+
+
+                <article class="personality-card reveal">
+                    <div class="personality-icon">🎨</div>
+                    <span class="card-number">05</span>
+                    <h3>THE CREATIVE</h3>
+                    <p>
+                        Imaginative, expressive and original people who see
+                        possibilities everywhere.
+                    </p>
+
+                    <div class="traits">
+                        <span>Imagination</span>
+                        <span>Expression</span>
+                        <span>Originality</span>
+                    </div>
+
+                    <button
+                        class="learn-btn"
+                        data-personality="creative">
+                        LEARN MORE →
+                    </button>
+                </article>
+
+
+                <article class="personality-card reveal">
+                    <div class="personality-icon">🌿</div>
+                    <span class="card-number">06</span>
+                    <h3>THE PEACEMAKER</h3>
+                    <p>
+                        Calm, patient and harmony-focused people who value
+                        balance and cooperation.
+                    </p>
+
+                    <div class="traits">
+                        <span>Calmness</span>
+                        <span>Balance</span>
+                        <span>Harmony</span>
+                    </div>
+
+                    <button
+                        class="learn-btn"
+                        data-personality="peacemaker">
+                        LEARN MORE →
+                    </button>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             QUIZ
+        ====================================================== -->
+        <section id="quiz" class="section quiz-section">
+
+            <div class="section-heading reveal">
+                <p class="section-label">THE BIG QUESTION</p>
+                <h2>Discover Your <span>Persona</span></h2>
+                <p>
+                    Answer honestly. There are no right or wrong answers.
+                </p>
+            </div>
+
+            <div class="quiz-container reveal">
+
+                <div class="quiz-top">
+
+                    <div>
+                        <span id="questionNumber">QUESTION 1 OF 15</span>
+                    </div>
+
+                    <div class="progress-percent">
+                        <span id="progressPercent">7%</span>
+                    </div>
+
+                </div>
+
+                <div class="progress-track">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+
+
+                <div class="question-area">
+
+                    <div class="question-icon" id="questionIcon">
+                        ❓
+                    </div>
+
+                    <h3 id="questionText">
+                        What do you usually do when you enter a new environment?
+                    </h3>
+
+                    <div id="answers" class="answers">
+
+                        <!-- JavaScript inserts answers here -->
+
+                    </div>
+
+                </div>
+
+
+                <div class="quiz-controls">
+
+                    <button
+                        id="prevBtn"
+                        class="quiz-btn secondary-btn"
+                        disabled>
+                        ← PREVIOUS
+                    </button>
+
+                    <button
+                        id="nextBtn"
+                        class="quiz-btn primary-btn"
+                        disabled>
+                        NEXT →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             RESULT
+        ====================================================== -->
+        <section id="result" class="section result-section">
+
+            <div class="section-heading reveal">
+                <p class="section-label">YOUR DISCOVERY</p>
+                <h2>Your Personality <span>Result</span></h2>
+            </div>
+
+            <div id="resultCard" class="result-card reveal">
+
+                <div class="result-icon" id="resultIcon">
+                    🧭
+                </div>
+
+                <p class="result-small-title">
+                    YOUR PERSONALITY IS
+                </p>
+
+                <h3 id="resultName">
+                    THE EXPLORER
+                </h3>
+
+                <p id="resultQuote" class="result-quote">
+                    "Curious minds are never bored."
+                </p>
+
+                <p id="resultDescription" class="result-description">
+                    Take the quiz to discover your personality.
+                </p>
+
+
+                <div class="result-details">
+
+                    <div class="detail-box">
+                        <h4>💪 Strengths</h4>
+                        <ul id="strengthsList">
+                            <li>Curiosity</li>
+                            <li>Adaptability</li>
+                            <li>Adventure</li>
+                        </ul>
+                    </div>
+
+                    <div class="detail-box">
+                        <h4>⚠️ Challenges</h4>
+                        <ul id="weaknessesList">
+                            <li>Restlessness</li>
+                            <li>Impatience</li>
+                            <li>Risk-taking</li>
+                        </ul>
+                    </div>
+
+                    <div class="detail-box">
+                        <h4>💬 Communication</h4>
+                        <p id="communicationText">
+                            Open and energetic.
+                        </p>
+                    </div>
+
+                    <div class="detail-box">
+                        <h4>💼 Work Style</h4>
+                        <p id="workText">
+                            Flexible and independent.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="score-section">
+
+                    <h4>PERSONALITY PROFILE</h4>
+
+                    <div class="score-row">
+                        <span>Leadership</span>
+                        <div class="score-track">
+                            <div id="leadershipScore" class="score-fill"></div>
+                        </div>
+                        <b id="leadershipValue">0%</b>
+                    </div>
+
+                    <div class="score-row">
+                        <span>Creativity</span>
+                        <div class="score-track">
+                            <div id="creativityScore" class="score-fill"></div>
+                        </div>
+                        <b id="creativityValue">0%</b>
+                    </div>
+
+                    <div class="score-row">
+                        <span>Adventure</span>
+                        <div class="score-track">
+                            <div id="adventureScore" class="score-fill"></div>
+                        </div>
+                        <b id="adventureValue">0%</b>
+                    </div>
+
+                    <div class="score-row">
+                        <span>Logic</span>
+                        <div class="score-track">
+                            <div id="logicScore" class="score-fill"></div>
+                        </div>
+                        <b id="logicValue">0%</b>
+                    </div>
+
+                    <div class="score-row">
+                        <span>Empathy</span>
+                        <div class="score-track">
+                            <div id="empathyScore" class="score-fill"></div>
+                        </div>
+                        <b id="empathyValue">0%</b>
+                    </div>
+
+                </div>
+
+
+                <div class="result-buttons">
+
+                    <button id="retakeBtn" class="btn primary-btn ripple">
+                        RETAKE QUIZ
+                    </button>
+
+                    <a href="#personalities" class="btn secondary-btn ripple">
+                        EXPLORE TYPES
+                    </a>
+
+                    <button id="shareBtn" class="btn outline-btn ripple">
+                        SHARE RESULT
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             COMPARISON
+        ====================================================== -->
+        <section id="compare" class="section comparison-section">
+
+            <div class="section-heading reveal">
+                <p class="section-label">SEE THE DIFFERENCE</p>
+                <h2>Personality <span>Comparison</span></h2>
+                <p>
+                    Select two personalities and compare their traits.
+                </p>
+            </div>
+
+
+            <div class="comparison-box reveal">
+
+                <div class="select-area">
+
+                    <div class="select-group">
+                        <label for="personalityOne">
+                            PERSONALITY 1
+                        </label>
+
+                        <select id="personalityOne">
+                            <option value="leader">The Leader</option>
+                            <option value="explorer">The Explorer</option>
+                            <option value="thinker">The Thinker</option>
+                            <option value="caregiver">The Caregiver</option>
+                            <option value="creative">The Creative</option>
+                            <option value="peacemaker">The Peacemaker</option>
+                        </select>
+                    </div>
+
+
+                    <div class="vs">
+                        VS
+                    </div>
+
+
+                    <div class="select-group">
+                        <label for="personalityTwo">
+                            PERSONALITY 2
+                        </label>
+
+                        <select id="personalityTwo">
+                            <option value="thinker">The Thinker</option>
+                            <option value="leader">The Leader</option>
+                            <option value="explorer">The Explorer</option>
+                            <option value="caregiver">The Caregiver</option>
+                            <option value="creative">The Creative</option>
+                            <option value="peacemaker">The Peacemaker</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <div class="comparison-table">
+
+                    <div class="comparison-header">
+                        <span>FEATURE</span>
+                        <span id="compareNameOne">THE LEADER</span>
+                        <span id="compareNameTwo">THE THINKER</span>
+                    </div>
+
+                    <div class="comparison-row">
+                        <span>Leadership</span>
+                        <div class="comparison-value">
+                            <div class="mini-track">
+                                <div id="leadOne" class="mini-fill"></div>
+                            </div>
+                            <b id="leadOneText">0%</b>
+                        </div>
+                        <div class="comparison-value">
+                            <div class="mini-track">
+                                <div id="leadTwo" class="mini-fill"></div>
+                            </div>
+                            <b id="leadTwoText">0%</b>
+                        </div>
+                    </div>
+
+                    <div class="comparison-row">
+                        <span>Creativity</span>
+                        <div class="comparison-value">
+                            <div class="mini-track">
+                                <div id="creativeOne" class="mini-fill"></div>
+                            </div>
+                            <b id="creativeOneText">0%</b>
+                        </div>
+                        <div class="comparison-value">
+                            <div class="mini-track">
+                                <div id="creativeTwo" class="mini-fill"></div>
+                            </div>
+                            <b id="creativeTwoText">0%</b>
+                        </div>
+                    </div>
+
+                    <div class="comparison-row">
+                        <span>Adventure</span>
+                        <div class="comparison-value">
+                            <div class="mini-track">
+                                <div id="adventureOne" class="mini-fill"></div>
+                            </div>
+                            <b id="adventureOneText">0%</b>
+                        </div>
+                        <div class="comparison-value">
+                            <div class="mini-track">
+                                <div id="adventureTwo" class="mini-fill"></div>
+                            </div>
+                            <b id="adventureTwoText">0%</b>
+                        </div>
+                    </div>
+
+                    <div class="comparison-row">
+                        <span>Logic</span>
+                        <div class="comparison-value">
+                            <div class="mini-track">
+                                <div id="logicOne" class="mini-fill"></div>
+                            </div>
+                            <b id="logicOneText">0%</b>
+                        </div>
+                        <div class="comparison-value">
+                            <div class="mini-track">
+                                <div id="logicTwo" class="mini-fill"></div>
+                            </div>
+                            <b id="logicTwoText">0%</b>
+                        </div>
+                    </div>
+
+                    <div class="comparison-row">
+                        <span>Empathy</span>
+                        <div class="comparison-value">
+                            <div class="mini-track">
+                                <div id="empathyOne" class="mini-fill"></div>
+                            </div>
+                            <b id="empathyOneText">0%</b>
+                        </div>
+                        <div class="comparison-value">
+                            <div class="mini-track">
+                                <div id="empathyTwo" class="mini-fill"></div>
+                            </div>
+                            <b id="empathyTwoText">0%</b>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+             FACTS
+        ====================================================== -->
+        <section id="facts" class="section facts-section">
+
+            <div class="section-heading reveal">
+                <p class="section-label">KNOW YOURSELF</p>
+                <h2>Fun Facts & <span>Tips</span></h2>
+                <p>
+                    Learn something interesting about personality and
+                    self-awareness.
+                </p>
+            </div>
+
+
+            <div class="facts-grid">
+
+                <article class="fact-card reveal">
+                    <div class="fact-icon">💬</div>
+                    <h3>Communication</h3>
+                    <p>
+                        Different personalities may prefer different
+                        communication styles.
+                    </p>
+                </article>
+
+
+                <article class="fact-card reveal">
+                    <div class="fact-icon">🎯</div>
+                    <h3>Motivation</h3>
+                    <p>
+                        People can be motivated by achievement, relationships,
+                        curiosity or security.
+                    </p>
+                </article>
+
+
+                <article class="fact-card reveal">
+                    <div class="fact-icon">🤝</div>
+                    <h3>Teamwork</h3>
+                    <p>
+                        Understanding different personalities can improve
+                        teamwork and cooperation.
+                    </p>
+                </article>
+
+
+                <article class="fact-card reveal">
+                    <div class="fact-icon">🧩</div>
+                    <h3>Self-Awareness</h3>
+                    <p>
+                        Personality quizzes can encourage reflection, but they
+                        are not professional psychological diagnoses.
+                    </p>
+                </article>
+
+            </div>
+
+
+            <div class="random-fact-box reveal">
+
+                <span id="randomFactIcon">💡</span>
+
+                <p id="randomFact">
+                    Click the button to discover a personality fact.
+                </p>
+
+                <button id="randomFactBtn" class="btn primary-btn ripple">
+                    SHOW RANDOM FACT
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <h2>🧠 PERSONA</h2>
+                <p>
+                    Discover Yourself. Understand Your Personality.
+                </p>
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">Home</a>
+                <a href="#personalities">Personalities</a>
+                <a href="#quiz">Quiz</a>
+                <a href="#result">Result</a>
+                <a href="#compare">Compare</a>
+                <a href="#facts">Facts</a>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 PERSONA | Educational Project</p>
+
+            <p>
+                ⚠ This quiz is designed for entertainment and
+                self-reflection. It is not a professional psychological
+                assessment.
+            </p>
+        </div>
+
+    </footer>
+
+
+    <!-- ================= BACK TO TOP ================= -->
+    <button id="backTop" class="back-top">
+        ↑
+    </button>
+
+
+    <!-- ================= MODAL ================= -->
+    <div id="personalityModal" class="modal">
+
+        <div class="modal-content">
+
+            <button id="closeModal" class="close-modal">
+                ×
+            </button>
+
+            <div id="modalIcon" class="modal-icon">🦁</div>
+
+            <h2 id="modalTitle">THE LEADER</h2>
+
+            <p id="modalDescription">
+                Confident and ambitious.
+            </p>
+
+            <div class="modal-details">
+
+                <div>
+                    <h4>Strengths</h4>
+                    <p id="modalStrengths"></p>
+                </div>
+
+                <div>
+                    <h4>Challenges</h4>
+                    <p id="modalWeaknesses"></p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
